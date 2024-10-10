@@ -18,8 +18,7 @@
     - name: build docker image using the Dockerfile
       command: docker build -t simple-project.img .
 
-    - name: Push Image to dockerhub
-      command: docker push hadijaber97/simple-project.img:latest
+
 
     - name: run container
       command: docker run -d --name simple-container -p 5000:80 simple-project.img
